@@ -95,10 +95,13 @@ def convert_timeseries(data, n_in=1, n_out=1, dropnan=True):
         agg.dropna(inplace=True)
     return agg
 
- #-----------------------------------#
- #		Actual code starts here   	 #
- #-----------------------------------#
+
+# -----------------------------------#
+#        Actual code starts here     #
+# -----------------------------------#
 # load dataset
+
+
 dataset = read_csv('pollution.csv', header=0, index_col=0)
 values = dataset.values
 # encode direction into integer
