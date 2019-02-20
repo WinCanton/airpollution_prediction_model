@@ -17,8 +17,10 @@ from tensorflow.contrib.keras.python.keras.layers import LSTM
 
 # This is git trial change
 
+
 def this_is_dummy_function(none):
-	return
+    return
+
 
 def parse(x):
     # function for parsing data into required format
@@ -92,7 +94,6 @@ def convert_timeseries(data, n_in=1, n_out=1, dropnan=True):
     if dropnan:
         agg.dropna(inplace=True)
     return agg
-
 
  #-----------------------------------#
  #		Actual code starts here   	 #
